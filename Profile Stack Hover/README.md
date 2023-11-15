@@ -1,0 +1,1 @@
+[ouput]('./ouput/output.png');
