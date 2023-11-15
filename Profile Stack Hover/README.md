@@ -1,1 +1,1 @@
-[ouput]('./ouput/output.png');
+('./ouput/output.png');
