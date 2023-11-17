@@ -1,0 +1,127 @@
+.container 
+{
+    display: grid;
+    min-height:95vh;
+    place-items: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container svg 
+{
+    width:16px;
+    height: auto;
+}
+.content 
+{
+    height:400px;
+    width:350px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid rgb(219, 219, 219);   
+}
+.content-form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+}
+.content-input 
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+}
+.content-form label 
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 268px;
+    height: 38px;
+}
+.content-form span
+{
+    position: absolute;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    left:20px;
+    opacity: 0.7;
+    transition: 0.1s ease-in-out;
+}
+.content-form input 
+{
+    width: 110%;
+    border: 1px solid rgb(219, 219, 219);
+    background: rgb(250, 250, 250);
+    height:34px;
+    outline: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.content-form input:valid + span
+{
+    transform: scale(calc(10/12)) translateY(-12px) translateX(-27px)
+}
+.content-form input:valid 
+{
+    padding-top:10px;
+}
+.content-form button 
+{
+    width: 270px;
+    height: 30px;
+    cursor: pointer;
+    border:none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color:white;
+    background-color: rgb(0, 149, 246);
+}
+.content-form button:hover 
+{
+    background-color: rgb(24, 119, 242);;
+}
+.content-or 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 18px;
+    margin-top: 15px;
+}
+.content-or span:nth-child(1),
+.content-or span:nth-child(3)
+{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:rgb(219, 219, 219);
+}
+.content-forgot 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 21px;
+    margin-top: 15px;
+}
+.content-forgot button 
+{
+    border:none;
+    color: #00376b;
+    cursor: pointer;
+}
+.content-forgot button:first-child
+{
+    display: flex;
+    column-gap: 4px;
+    font-size: 15px;
+    color:#385185;
+    font-weight: bold;
+}
