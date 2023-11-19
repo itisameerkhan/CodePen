@@ -1,0 +1,53 @@
+body 
+{
+  background-color:black;
+  color:white;
+  font-family: 'Roboto Mono', cursive;
+}
+.search-wrapper 
+{
+  display:flex;
+  flex-direction:column;
+  gap:.25rem;
+}
+input 
+{
+  font-size:1rem;
+  height:40px;
+  outline:none;
+  border:2px solid white;
+  background-color:transparent;
+  border-radius:10px;
+  color:white;
+  padding:0px 20px;
+}
+.user-cards 
+{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  gap:.25rem;
+  margin-top:1rem;
+}
+.card 
+{
+  border:2px solid white;
+  padding:30px 50px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  cursor:pointer;
+  transition:all 100ms ease-in-out;
+}
+.card > .header 
+{
+  font-size:20px;
+}
+.card > .body 
+{
+  font-size:15px;
+  color:#777;
+}
+.hide 
+{
+  display:none;
+}

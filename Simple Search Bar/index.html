@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search-wrapper">
+    <label for="search">search users</label>
+    <input type="search" id="search" data-search></input>
+    <div class="user-cards" data-user-cards-container></div>
+    <template data-user-template>
+    <div class="card">
+        <div class="header" data-header>my name</div>
+        <div class="body" data-body>email@gmail.com</div>
+    </div>
+    </template>
+    </div>
+
+</body>
+</html>
