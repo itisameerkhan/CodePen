@@ -1,0 +1,78 @@
+body 
+{
+    background-color: black;
+}
+*
+{
+    padding:0;
+    margin:0;
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+}
+ul .menu-item 
+{
+    height: 33.33vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    padding:0;
+    margin:0;
+    position: relative;
+}
+.menu-item .menu-link 
+{
+    display: flex;
+    gap: 100px;
+    position: relative;
+}
+ul .menu-item span
+{
+    font-size: 12.5vmax;
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #F6D0B1;
+    animation:marquee 25s linear normal infinite;
+    position: relative;
+    display: block;
+}
+.menu-item:hover span 
+{
+    animation-play-state: paused;                     
+}
+.menu-item .menu-background
+{
+    opacity: 0;
+    border:2px solid;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+}
+.menu-item:hover .menu-background
+{
+    opacity: 0.75;
+    transition: opacity 300ms;
+    mix-blend-mode: screen;
+    filter: saturate(0.5);
+}
+@keyframes marquee
+{
+    to
+    {
+        transform: translateX(-100%)
+    }
+}
+.item-first 
+{
+    background: #5B2E48;
+}
+.item-second
+{
+    background: #585563;
+}
+.item-third
+{
+    background: #749C75;    
+}
