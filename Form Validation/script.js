@@ -15,6 +15,7 @@ function validateInputs() {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
   const confirmPasswordValue = confirmPassword.value.trim();
+
   let success = true;
 
   if (usernameValue === "") {
