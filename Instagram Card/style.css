@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(118, 118, 118);
+  }
+  @font-face {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"),
+      url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+        format("woff2");
+  }
+  
+  .section {
+    background-color: rgb(118, 118, 118);
+    height: 400px;
+    width: 550px;
+    box-shadow: 0px 0px 20px 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+  .section img {
+    position: absolute;
+    height: 30%;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .section .angel {
+    position: absolute;
+    top: 30px;
+    left: 190px;
+    font-size: 30px;
+    font-family: "Product Sans";
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .section .the-weekend {
+    position: absolute;
+    top: 90px;
+    left: 190px;
+    font-size: 15px;
+    font-family: "Product Sans";
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+  }
+  .section .quotes {
+    margin: 50px;
+    position: relative;
+    top: 150px;
+    font-family: "Product Sans";
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+  .section .fab {
+    display: inline-block;
+    color: white;
+  }
+  .section .spotify {
+    color: white;
+    display: inline;
+    font-family: "Product Sans";
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+  .section .footer {
+    position: absolute;
+    top: 320px;
+    font-size: 25px;
+    left: 50px;
+  }
+  .section .footer a {
+    text-decoration: none;
+  }
+  
