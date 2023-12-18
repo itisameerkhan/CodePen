@@ -9,6 +9,7 @@ let displayTime = function () {
     } else {
       document.getElementById("ampm").innerHTML = "AM";
     }
+
     document.getElementById("hours").innerHTML = padZero(hr);
     document.getElementById("mins").innerHTML = min;
     document.getElementById("seconds").innerHTML = sec;
