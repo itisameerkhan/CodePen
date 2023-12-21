@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto Mono", cursive;
+  }
+  .container {
+    border: 2px solid;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+  .container p {
+    text-align: center;
+    padding: 30px;
+  }
+  .container input {
+    height: 30px;
+    width: 200px;
+    margin-left: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    font-family: "Roboto Mono", cursive;
+    font-size: 15px;
+  }
+  .container button {
+    height: 35px;
+    width: 70px;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-family: "Roboto Mono", cursive;
+  }
+  .container button:hover {
+    background-color: white;
+    color: black;
+  }
+  .container #todoList {
+    height: 220px;
+    width: 90%;
+    margin: 10px 0px 0px 20px;
+    overflow: scroll;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .container #todoList p {
+    text-align: left;
+    padding: 10px 0px 0px 25px;
+    cursor: pointer;
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  
