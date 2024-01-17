@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  background-color: #202020;
+}
+div {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-family: "Bebas neue";
+  background: linear-gradient(to right, rgba(0, 168, 253), #fff 35%, #e00a95);
+  font-size: 8rem;
+  letter-spacing: 5px;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
