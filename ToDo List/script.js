@@ -35,6 +35,7 @@ function display(todo) {
     remove(todo);
   });
 }
+
 function remove(todo) {
   let index = todos.indexOf(todo);
   if (index > -1) {
